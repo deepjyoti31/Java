@@ -1,2 +1,5 @@
 # Java
-Small problems solved
+
+Solutions to problems from HackerRank
+
+https://www.hackerrank.com
