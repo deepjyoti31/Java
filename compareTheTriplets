@@ -1,0 +1,47 @@
+// Please find the Problem descriptions on the link below
+// https://www.hackerrank.com/challenges/compare-the-triplets/problem
+
+
+import java.util.Scanner;
+
+
+public class App {
+
+    public static void main(String[] args) {
+        
+       Scanner sc = new Scanner(System.in);
+       
+       int[] scoreOfAlice = new int[3];
+       int[] scoreOfBob = new int[3];
+       
+       for (int i=0; i<3; i++){
+           scoreOfAlice[i] = sc.nextInt();
+       }
+       
+       for (int i=0; i<3; i++){
+           scoreOfBob[i] = sc.nextInt();
+       }
+       
+       int pointOfAlice=0;
+       int pointOfBob=0;
+       
+       for (int i=0; i<3 ; i++){
+                if (scoreOfAlice[i]>scoreOfBob[i]){
+                        pointOfAlice += 1;
+                    }
+                else if (scoreOfAlice[i]<scoreOfBob[i]){
+                        pointOfBob += 1;
+                }
+       }
+       
+       int[] finalScore = new int[2];
+       
+       finalScore[0] = pointOfAlice;
+       finalScore[1] = pointOfBob;
+       
+        System.out.println(finalScore[0] + " " + finalScore[1]);
+    }
+    
+    
+    
+}
