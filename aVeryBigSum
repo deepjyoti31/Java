@@ -1,0 +1,36 @@
+// Please find the Problem descriptions on the link below
+// https://www.hackerrank.com/challenges/a-very-big-sum/problem
+
+
+import java.util.Scanner;
+
+
+public class App {
+
+    public static void main(String[] args) {
+        
+       Scanner sc = new Scanner(System.in);
+       
+       long[] numbers;
+       
+       int length = sc.nextInt();
+       
+       numbers = new long[length];
+       
+       for (int i=0; i<length; i++){
+           numbers[i] = sc.nextInt();
+       }
+       
+       long sum=0;
+       
+       for (int i=0; i<length; i++){
+           sum += numbers[i];
+       }
+       
+        System.out.println(sum);
+        
+    }
+    
+    
+    
+}
